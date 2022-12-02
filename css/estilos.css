@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo1 {
+    background-color: black;
+}
+
+.fondo2 {
+    background-color: whitesmoke;
+}
+
+header {
+    position: relative;
+}
+
+#logo {
+    width: 150px;
+    height: 111px;
+    background: url(../imagenes/RS-LOGO3.png) no-repeat center;
+    font-size: 0;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+    #logo {
+        left: calc(50% - 75px);
+    }
+
+    .nosotros .columnas {
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding-top: 20px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    #logo {
+        background: url(../imagenes/RS-LOGO.png) no-repeat center;
+    }
+
+    #nosotros .columnas {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        gap: 80px;
+        padding-top: 20px;
+    }
+
+}
+
+
+/*   estilo general**/
+
+:root {
+    --background-color: black;
+    --primary-color: rgb(250, 245, 245);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 1em;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*   INTRO **/
+
+
+#intro {
+    max-width: 100%;
+    display: block;
+    margin-top: 100px;
+    padding-bottom: 10px;
+    line-height: 35px;
+}
+
+#intro h2 {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.foto1 img {
+    max-width: 100%;
+    filter: drop-shadow(5px 9px 5px rgb(21, 51, 187));
+    position: relative;
+    float: right;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 90%;
+}
+
+
+#intro p {
+    color: rgb(214, 210, 210);
+    font-size: 1.2em;
+    text-align: match-parent;
+    line-height: 1.2em;
+    padding-top: 15px;
+    margin: 5px 20px;
+}
+
+/*   card**/
+
+.oculto {
+    display: none;
+}
+
+#container-entrenamientos{
+overflow: hidden;
+}
+
+#caja:target .mas {
+    display: none;
+}
+
+#item1:target .oculto {
+    display: block;
+}
+
+#item1:target .mas {
+    display: none;
+}
+
+#item2:target .oculto {
+    display: block;
+}
+
+#item2:target .mas {
+    display: none;
+}
+
+#item3:target .oculto {
+    display: block;
+}
+
+#item3:target .mas {
+    display: none;
+}
+
+#item4:target .oculto {
+    display: block;
+}
+
+#item4:target .mas {
+    display: none;
+}
+
+/*video running**/
+
+#main-video .video h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#main-video .video p {
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: rgb(167, 164, 164);
+}
+
+#main-video .video video {
+    display: block;
+    margin: 50px auto;
+    max-width: 90%;
+    margin-bottom: 55px;
+    margin-top: 50px;
+    border: 1px solid rgb(248, 246, 246);
+
+}
+
+/*   SOBRE NOSOTROS **/
+
+#nosotros {
+    max-width: 100%;
+    background-color: var(--background-color);
+    color: white;
+    width: 90%;
+    text-align: justify;
+    margin: 80px auto;
+    padding-bottom: 30px;
+}
+
+#nosotros h3 {
+    padding-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 1;
+    }
+
+#nosotros h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+
+#nosotros p {
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(167, 167, 167);
+}
+
+/*   FORMULARIO CONTACTO **/
+aside {
+            width: 300px;
+            margin: 20px auto;
+        }
+
+.form h2 {
+    margin-top: 80px;
+}
+
+form {
+    max-width: 100%;
+    width: 300px;
+    margin: 20px auto;
+    background-color: rgb(143, 143, 143);
+    padding: 20px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 10px 0;
+}
+
+
+form>div:first-child {
+    margin-top: 0;
+}
+
+form>div:last-child {
+    margin-top: 15px;
+    margin-bottom: 0;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+input,
+textarea {
+    padding: 5px;
+}
+
+
+input[type="submit"] {
+    width: 80px;
+    background: black;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="reset"] {
+    width: 80px;
+    background: rgb(167, 166, 166);
+    border: 1px solid whitesmoke;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* mensaje de enviado.*/
+
+#gracias {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(77, 112, 189);
+    color: white;
+    position: fixed;
+    top: -90vh;
+    left: calc(50vw - 150px);
+    padding: 20px;
+    transition: all 600ms;
+}
+
+#gracias p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#gracias a {
+    float: right;
+    width: 80px;
+    background-color: rgb(73, 34, 248);
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+#gracias:target {
+    display: block;
+    top: calc(50vh - 100px);
+}
+
+/**contacto**/
+
+.contacto {
+    background-color: black;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: white;
+    margin: 10px auto;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.contacto-datos {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto h2,
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.contacto h3 {
+    margin-top: 30px;
+    font-size: 1.2em;
+
+}
+
+.contacto .emails {
+    text-align: center;
+    line-height: 25px;
+}
+
+.contacto a {
+    text-decoration: none;
+}
+
+
+.contacto .emails a {
+    font-size: 1em;
+    color: rgb(103, 104, 104);
+    text-decoration: none;
+}
+
+.social a {
+    display: block;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+
+footer p {
+    color: whitesmoke;
+    text-align: center;
+}
